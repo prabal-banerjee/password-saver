@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<title>Password Saver</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 
+.w3-row-padding img {margin-bottom: 12px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+body{
+    min-width: 500px;
+    max-width: 500px;
+    /* min-height: 200px; */
+}
+div#hide {
+    padding: 20px;
+    display: none;
+    word-wrap: break-word;
+}
+  
+span#showEncPass:hover + div#hide {
+  display: block;
+}
+</style>
+<body class="w3-black">
+
+    <!-- Page Content -->
+    <div class="w3-padding-small">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black">
+          <h3>Password Saver</h3>
+          <p id="showDomain"></p>
+        </header>
+
+        <span class="w3-tag w3-padding w3-round-small w3-red w3-center w3-block" id="showEncPass"></span>
+        <div id="hide"></div>
+
+        <br/><br/>
+
+        <input class="w3-input w3-border" type="text" id="master" placeholder="Master Password">
+        <input class="w3-button w3-block w3-section w3-blue w3-ripple" style="visibility: hidden; margin-top: 0px!important" id="decrypt" type="submit" value="Decrypt Password">
+        
+        <input class="w3-input w3-border" type="text" id="pass" placeholder="Website Password">
+        <input class="w3-button w3-block w3-section w3-blue w3-ripple" style="margin-top: 0px!important" id="setPass" type="submit" value="Set Password">
+        
+        <footer class="w3-content w3-padding-16 w3-text-grey w3-large">
+            <p class="w3-small">Review and contribute code: <a href="github_link" target="_blank">GitHub</a></p>
+            <p class="w3-small">Made by <a href="http://www.cmi.ac.in/~prabal/" target="_blank" class="w3-hover-text-green">Prabal</a></p>
+            <span class="w3-padding-64"></span>
+            <p class="w3-small"><a href="https://crypto.stanford.edu/sjcl/" target="_blank" class="w3-hover-text-green">SJCL</a> | <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        </footer>
+      
+      <!-- END PAGE CONTENT -->
+    </div>
+    <script src="sjcl.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
+      
+
+    <!-- <button id="viewDomain"></button> -->
+    <!-- <p id="showDomain">Domain: </p>
+    <p id="showEncPass" style="word-wrap: break-word;">Encrypted Password: </p>
+    <br/> -->
+    <!-- <form name="setPass" onsubmit="setPass()"> -->
+        <!-- Master Password: <input type="text" id="master"><br>
+        <input id="decrypt" type="submit" value="Decrypt Password" hidden>
+        <br/><br/>
+        Website Password: <input type="text" id="pass"><br><br>
+        <input id="setPass" type="submit" value="Set Password"> -->
+    <!-- </form> -->
+    <!-- <script src="sjcl.js"></script>
+    <script src="popup.js"></script>
+    <br/><br/><br/>
+</body>
+<footer>
+    <p>Made by <a href="http://www.cmi.ac.in/~prabal/" target="_blank">Prabal Banerjee</a></p> -->
+    <!-- TODO: Add contribution link
+    TODO: Add support library credit, sjcl? -->
+<!-- </footer>
+</html> -->

@@ -1,0 +1,14 @@
+{
+    "name": "Password Saver",
+    "version": "1.0",
+    "description": "Save your passwords in encrypted form, do not leak passwords, be in control!",
+    "background": {
+        "scripts": ["encrypt.js"],
+        "persistent": false
+    },
+    "permissions": ["tabs", "storage"],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 2
+}
