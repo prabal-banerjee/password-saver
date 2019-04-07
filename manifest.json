@@ -3,7 +3,7 @@
     "version": "1.0",
     "description": "Save your passwords in encrypted form, do not leak passwords, be in control!",
     "background": {
-        "scripts": ["encrypt.js"],
+        "scripts": ["background.js"],
         "persistent": false
     },
     "permissions": ["tabs", "storage"],

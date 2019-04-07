@@ -29,7 +29,7 @@ span#showEncPass:hover + div#hide {
     <!-- Page Content -->
     <div class="w3-padding-small">
         <!-- Header/Home -->
-        <header class="w3-container w3-padding-32 w3-center w3-black">
+        <header class="w3-container w3-padding-16 w3-center w3-black">
           <h3>Password Saver</h3>
           <p id="showDomain"></p>
         </header>
@@ -39,16 +39,17 @@ span#showEncPass:hover + div#hide {
 
         <br/><br/>
 
-        <input class="w3-input w3-border" type="text" id="master" placeholder="Master Password">
+        <input class="w3-input w3-border password-input" type="password" id="master" placeholder="Master Password">
         <input class="w3-button w3-block w3-section w3-blue w3-ripple" style="visibility: hidden; margin-top: 0px!important" id="decrypt" type="submit" value="Decrypt Password">
         
-        <input class="w3-input w3-border" type="text" id="pass" placeholder="Website Password">
+        <input class="w3-input w3-border password-input" type="password" id="pass" placeholder="Website Password">
         <input class="w3-button w3-block w3-section w3-blue w3-ripple" style="margin-top: 0px!important" id="setPass" type="submit" value="Set Password">
         
+        <input class="w3-check" id="passwordToggle" type="checkbox"><label>Show Password</label>
+
         <footer class="w3-content w3-padding-16 w3-text-grey w3-large">
-            <p class="w3-small">Review and contribute code: <a href="github_link" target="_blank">GitHub</a></p>
+            <p class="w3-small">Review and contribute code: <a href="https://github.com/prabal-banerjee/password-saver" target="_blank">GitHub</a></p>
             <p class="w3-small">Made by <a href="http://www.cmi.ac.in/~prabal/" target="_blank" class="w3-hover-text-green">Prabal</a></p>
-            <span class="w3-padding-64"></span>
             <p class="w3-small"><a href="https://crypto.stanford.edu/sjcl/" target="_blank" class="w3-hover-text-green">SJCL</a> | <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
         </footer>
       
@@ -59,25 +60,3 @@ span#showEncPass:hover + div#hide {
 </body>
 </html>
       
-
-    <!-- <button id="viewDomain"></button> -->
-    <!-- <p id="showDomain">Domain: </p>
-    <p id="showEncPass" style="word-wrap: break-word;">Encrypted Password: </p>
-    <br/> -->
-    <!-- <form name="setPass" onsubmit="setPass()"> -->
-        <!-- Master Password: <input type="text" id="master"><br>
-        <input id="decrypt" type="submit" value="Decrypt Password" hidden>
-        <br/><br/>
-        Website Password: <input type="text" id="pass"><br><br>
-        <input id="setPass" type="submit" value="Set Password"> -->
-    <!-- </form> -->
-    <!-- <script src="sjcl.js"></script>
-    <script src="popup.js"></script>
-    <br/><br/><br/>
-</body>
-<footer>
-    <p>Made by <a href="http://www.cmi.ac.in/~prabal/" target="_blank">Prabal Banerjee</a></p> -->
-    <!-- TODO: Add contribution link
-    TODO: Add support library credit, sjcl? -->
-<!-- </footer>
-</html> -->

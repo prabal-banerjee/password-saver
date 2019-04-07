@@ -40,6 +40,11 @@ window.addEventListener('load', function load(event) {
             
     });
 
+    document.getElementById('passwordToggle').addEventListener('click', function(){ 
+        // On clicking show password toggle, call this function
+        togglePasswordInput();
+    });
+
 });
 
 // Function to set password for some URL
@@ -78,4 +83,17 @@ function recoverPass(ct){
         alert('Wrong Key!')
     }
   
+}
+
+// Function to show or hide password entered
+function togglePasswordInput() {
+    var elements = document.getElementsByClassName("password-input");
+    for (var i = 0; i < elements.length; i++) {
+        var x = elements[i];
+        if (x.type === 'password') {
+            x.type = 'text';
+        } else {
+            x.type = 'password';
+        }
+    }
 }
