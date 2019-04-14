@@ -19,3 +19,6 @@ The master password is used as a key to encrypt the website specific password, w
 Don't forget the master password, else you will _not_ be able to retrieve the password. 
 
 The codebase may contain bugs and can be unstable. Don't save important passwords, just yet. 
+
+## Alternative
+Use [Buttercup](https://buttercup.pw/). 
